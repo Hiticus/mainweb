@@ -77,3 +77,27 @@ li a.active {
   flex-basis: 50%;
 }
 }
+
+.grid{
+  max-width: 800px;
+  margin: 0 auto;
+  display: grid ;
+  grid-template-columns: auto auto;
+  grid-auto-rows: auto;
+  align-items: center;
+  
+  background-color: black;
+  padding: 10px;
+}
+
+.grid > div {
+  border: 1px solid black;
+  background-color: azure;
+  padding: 50px;
+  font-size: 30px;
+  text-align: center;
+
+}
+.gitem1{
+  grid-column: 1/ span 2;
+}
