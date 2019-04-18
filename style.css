@@ -60,10 +60,20 @@ li a {
 
 li a:hover:not(.active) {
   color: white;
-  background-color:rgb(53, 174, 255);
+  /*background-color:rgb(53, 174, 255);*/
 }
 
 li a.active {
   color: white;
-  background-color: rgb(53, 174, 255);
+ /* background-color: rgb(53, 174, 255);
+*/}
+@media all and (max-width: 400px){
+.flexbox{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+  .flexbox > li {
+  flex-basis: 50%;
+}
 }
