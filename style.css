@@ -1,111 +1,101 @@
-h1{
-    font-family: 'Ubuntu', sans-serif;
-    color: whitesmoke;
-    text-align: center;
-}
-body{
 
-        width: 100wh;
-        height: 90vh;
-        color: #fff;
-        background: linear-gradient(-45deg, rgb(196, 231, 245), rgb(99, 214, 243), #23A6D5, rgb(73, 134, 248));
-        background-size: 400% 400%;
-        -webkit-animation: Gradient 15s ease infinite;
-        -moz-animation: Gradient 15s ease infinite;
-        animation: Gradient 15s ease infinite;
-    
-}
-img{
 
-}
-@-webkit-keyframes Gradient {
-	0% {
-		background-position: 0% 50%
-	}
-	50% {
-		background-position: 100% 50%
-	}
-	100% {
-		background-position: 0% 50%
-	}
-}
-ul {
-  font-family: 'Ubuntu', sans-serif;
+nav{
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  opacity: 0.6;
-  
-  transition-duration: 0.3s;
-
-}
-ul:hover{
-  opacity: 1;
-  transition-duration: 0.3s;
-  
+  background: rgb(7,1,105);
+  background: linear-gradient(90deg, rgba(7,1,105,1) 0%, rgba(4,84,187,1) 44%, rgba(192,110,250,1) 100%);
+  font-size: 0.8rem; 
 }
 
-li {
+a{
   float: left;
-}
-
-li a {
-  display: inline;
-  color: #666;
-  text-align: center;
-  padding: 40px 20px;
-  text-decoration: none;
-}
-
-li a:hover:not(.active) {
-  color: white;
-  border-bottom: 2px solid white;
-  text-decoration: underline;
+  display: block;
+  color: aliceblue;
+  text-align: justify;
+  padding: 14px 16px;
   transition-duration: 0.3s;
-  /*background-color:rgb(53, 174, 255);*/
+}
+a:hover{
+ transition-duration: 0.3s;
+ color:purple;
 }
 
-li a.active {
-  color: white;
-  border-bottom: 2px solid white;
-  /*border-bottom-color: white;*/
- /* background-color: rgb(53, 174, 255);
-*/}
-@media all and (max-width: 400px){
-.flexbox{
+header{
+  background-image: url("plkp.jpg");
+  background-size: cover;
   display: flex;
-  flex-wrap: wrap;
+  min-height: 200px;
+  height: auto;
 }
-
-  .flexbox > li {
-  flex-basis: 100%;
-}
-}
-
-.grid{
-  max-width: 950px;
-  margin: 0 auto;
-  display: grid ;
-  grid-template-columns: auto auto;
-  grid-auto-rows: auto;
-  align-items: center;
-  font-family: Ubuntu;
-  color: white; 
-  /*background-color: black;*/
-  padding: 15px;
-}
-
-.grid > div {
-  opacity: 0.6;
-  border: 10px solid;
-  background-color:black;
-  padding: 40px;
-  font-size: 30px;
+h1{
+  color: aliceblue;
+  margin-top: 50px;
+  text-align: center; 
   text-align: center;
-
 }
-.gitem1{
-  
-  grid-column: 1/ span 2;
+.title{
+  display: block;
+  text-align: left;
+  font-family: sans-serif;
+  font-size: 2rem;
+  color: aliceblue;
+  position: sticky;
+  background: rgb(7,1,105);
+  background: linear-gradient(90deg, rgba(7,1,105,1) 0%, rgba(4,84,187,1) 44%, rgba(192,110,250,1) 100%);
+  margin: 0;
+  padding: 0;
+}
+#t1{
+  top: 0;
+  bottom: 6rem;
+}
+#t2{
+  top: 2rem;
+  bottom: 4rem;
+}
+#t3{
+  top: 4rem;
+  bottom: 2rem;
+}
+#t4{
+  top: 6rem;
+  bottom: 0;
+}
+.content{
+  display: grid;
+  grid-template-columns: 200px auto;
+  background-color: rgb(120, 145, 221);
+  gap: 40px;
+  font-size: 1.2rem;
+}
+.content img{
+  border-radius: 50%;
+  max-width: 200px;
+  max-height: 200px;
+  padding: 20px;
+}
+.skills{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+  grid-template-rows: auto;
+  gap: 10px;
+  text-align: center;
+}
+
+.s1{
+  background-color: salmon;
+}
+.work{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+  gap: 20px;
+}
+.work img{
+ width: 100%;
+ max-height: 200px; 
+ display: block;
+ object-fit: contain;
 }
