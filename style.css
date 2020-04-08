@@ -1,14 +1,6 @@
 
 
-nav{
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background: rgb(7,1,105);
-  background: linear-gradient(90deg, rgba(7,1,105,1) 0%, rgba(4,84,187,1) 44%, rgba(192,110,250,1) 100%);
-  font-size: 0.8rem; 
-}
+
 
 a{
   float: left;
@@ -48,22 +40,7 @@ h1{
   margin: 0;
   padding: 0;
 }
-#t1{
-  top: 0;
-  bottom: 6rem;
-}
-#t2{
-  top: 2rem;
-  bottom: 4rem;
-}
-#t3{
-  top: 4rem;
-  bottom: 2rem;
-}
-#t4{
-  top: 6rem;
-  bottom: 0;
-}
+
 .content{
   display: grid;
   grid-template-columns: 200px auto;
