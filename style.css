@@ -81,6 +81,7 @@ h1{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
   gap: 20px;
+  background-color: #002b36;
 }
 .work img{
  width: 100%;
