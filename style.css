@@ -19,13 +19,14 @@ header{
   height: 600px;
   filter: brightness(50%);
 }
+
 .header-links{
   display: inline-flex;
   position: absolute;
   color: white;
-  right: 10px;
-  bottom: 10px;
   gap: 30px;
+  right: 10px;
+  bottom: 30px;
 }
 
 h1{
